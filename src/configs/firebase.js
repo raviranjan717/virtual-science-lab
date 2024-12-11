@@ -1,12 +1,12 @@
 import firebase from "firebase";
 
 const firebaseApp = firebase.initializeApp({
-  apiKey: "AIzaSyDFAIsKcAeYwRaXQ-xGQNBEPYlBGxlNslI",
-  authDomain: "virtual-science-lab.firebaseapp.com",
-  projectId: "virtual-science-lab",
-  storageBucket: "virtual-science-lab.firebasestorage.app",
-  messagingSenderId: "520749203736",
-  appId: "1:520749203736:web:52d49ab015014bdda6de6d",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
   measurementId: "",
 });
 
